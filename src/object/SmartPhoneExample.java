@@ -16,6 +16,20 @@ class SmartPhone {
 	private String company;
 	private String os;
 	
+	
+	
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
+	}
+	public String getOs() {
+		return os;
+	}
+	public void setOs(String os) {
+		System.out.println("권한이 없습니다."); // set을 하지못하도록 
+	}
 	public SmartPhone(String company, String os) {
 		this.company = company;
 		this.os = os;

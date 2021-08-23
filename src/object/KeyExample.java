@@ -7,6 +7,9 @@ class Key {
 	
 	public Key(int number) {
 		this.number = number;
+		
+	System.out.println(number);
+	
 	}
 	
 	@Override
@@ -14,9 +17,11 @@ class Key {
 		if(obj instanceof Key) {
 			Key compareKey = (Key) obj;
 			if(this.number == compareKey.number) { 
+				System.out.println("true");
 				return true;
 			}
 		}
+		System.out.println("false");
 		return false;
 	}
 }
